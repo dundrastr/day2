@@ -1,0 +1,21 @@
+# day2
+
+data day2;
+input a c d b;
+/* input a b c d;
+   input f ds  dj jb */  (multi line commentcomment)
+* datalines;   (single line comments)
+   
+cards;
+1 12 3 5
+3 4 5 5 
+2 43 4 5
+ 44 4 2 2
+ ;
+ run;
+ 
+ /* data steps read and modify data 
+    proc step analyze data and perform utility functions, or print reports  */
+    
+ 
+ 
