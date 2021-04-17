@@ -47,3 +47,6 @@ input
 ..
 ...
 run;
+
+
+/* sas temporary datasets are removed automatically after the session completed */
