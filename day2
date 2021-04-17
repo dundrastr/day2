@@ -34,3 +34,16 @@ DATALINES;
 8 GURU 722.5 FINANCE
 ;
 RUN;
+
+
+data lib1.dataset1;  /* permanent dataset */
+input ...;
+..;
+run;
+
+data dataset2;   /* temporary dataset */
+input 
+..
+..
+...
+run;
