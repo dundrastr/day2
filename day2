@@ -50,3 +50,47 @@ run;
 
 
 /* sas temporary datasets are removed automatically after the session completed */
+
+
+>>> Started strings :)
+
+data strings;
+length str1 $6 str2 $4;
+str1 = 'hello';
+str2 = 'sjdksdss';
+joined_strs = str1 || str2;  /* this one joins two strings */
+run;
+
+proc print data = strings;
+run;
+
+data strings2;
+str1 = 'predator';
+str2 = 'processor';
+str3 = substr(str1, 2,4);  /* and this returns substring from a given string */
+str4 = substr(str2, 3);
+run;
+
+proc print data= strings2 noobs;
+run;
+
+
+
+
+data emppl;
+length str1 $ 20;
+str1  = 'sjdfladsfh   ';
+len1 = lengthc(str1);
+len2 = lengthc(TRIMN(str1));  /* this one here trims the string i.e removes extra spaces */
+run;
+
+proc print data= emppl noobs;  /* noobs removes obs count */
+run;
+
+
+
+>>> ARRAYS 
+
+Syntax for declaring an array 
+   >>> " ARRAY ARRAY-NAME(SUBSCRIPT) ($) VARIABLE-LIST ARRAY-VALUES "
+   
